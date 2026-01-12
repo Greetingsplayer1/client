@@ -109,7 +109,7 @@ body {
 }
 
 .navbar a {
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   text-align: center;
   padding: 8px 12px;
@@ -124,7 +124,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   outline: none;
   color: white;
