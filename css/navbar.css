@@ -58,7 +58,7 @@ body {
 }
 
 .secondary-navbar a:hover {
-  background-color: orange;
+  background-color: rgb(255, 0, 0);
 }
 
 /* Scrollbar styling for secondary navbar */
