@@ -179,6 +179,26 @@ body {
   text-align: center;
 }
 
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#hero {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#CLICKME {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: white;
+}
+
 /* Footer */
 .footer {
   background-color: #333;
@@ -217,13 +237,13 @@ body {
 }
 
 .card h2 {
-  font-size: 50px;
-  margin: 20px 0;
+  font-size: 30px;
+  margin: 10px 0;
 }
 
 .line {
   height: 0px;
-  width: 98%;
+  width: 96%;
   border: 4px solid #fbfbfb;
   margin: 10px 0;
 }
@@ -247,7 +267,9 @@ body {
   border: 3px solid #000000;
   border-radius: 15px;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 260px;
+  position: absolute;
 }
 
 /* Mobile Styles */
@@ -281,6 +303,7 @@ body {
     background-color: #333;
     padding: 0;
     margin: 0;
+    z-index: 2;
   }
 
   .nav-links.active {
@@ -349,5 +372,6 @@ body {
     text-align: left;
     padding: 6px 12px;
   }
+
 }
 
