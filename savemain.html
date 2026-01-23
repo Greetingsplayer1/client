@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="css/page.css">
     </head>
     <body>
-        <div class="grid-container">
-            <!-- Primary Navbar -->
+        <div class="grid-container"></h1>
             <div class="navbar">
                 <button class="hamburger" aria-label="Toggle menu">
                     <span class="hamburger-line"></span>
@@ -17,12 +16,12 @@
                     <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="https://greetingsplayer1.github.io/client/">Home</a></li>
+                    <li><a href="https://greetingsplayer1.github.io/client/Current.html">Current Musical</a></li>
+                    <li><a href="https://greetingsplayer1.github.io/client/thesbians.html">Thesbian</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
+                            <button class="dropbtn">Past Musicals</button>
                             <div class="dropdown-content">
                                 <a href="#link1">Link 1</a>
                                 <a href="#link2">Link 2</a>
@@ -32,57 +31,6 @@
                     </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-            
-            <!-- Secondary Navbar -->
-            <div class="secondary-navbar">
-                <ul class="secondary-nav-links">
-                    <li><a href="#documentation">Documentation</a></li>
-                    <li><a href="#examples">Examples</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#tutorials">Tutorials</a></li>
-                    <li><a href="#api">API Reference</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#downloads">Downloads</a></li>
-                    <li><a href="#changelog">Changelog</a></li>
-                    <li><a href="#license">License</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            
-            <div class="main-content">
-                        <div class="image-container">
-                            <img id="hero" src="client.png" alt="Just a placeholder for now."> 
-                            <div id="CLICKME">CLICK ME</div>
-                        </div>
-                
-                        <h1>What is theater</h1>
-                <p>This is the main content area. Hover over the "Dropdown" link in the navbar to see the dropdown menu.</p>
-
-                <div class="crdgrd">
-        <div class="card" id="crd1">
-            <h2>Thesbian</h2>
-            <div class="line"></div>
-            <p>The thesbians are a group of people who poses talent in the art of performing</p>
-            <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-
-        <div class="card" id="crd2">
-            <h2>Past Musicals</h2>
-            <div class="line"></div>
-            <p>$90 per person for two hours with up to 10% OFF!!!</p>
-             <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-
-        <div class="card" id="crd3">
-            <h2>4 hours $150</h2>
-            <div class="line"></div>
-            <p>$150 per person for four hours with up to 10% OFF!!!</p>
-             <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-    </div>
             </div>
 
             
@@ -107,22 +55,6 @@
                     navLinks.classList.remove('active');
                 }
             })
-
-            const elements = document.querySelectorAll('#crd1, #crd2, #crd3');
-
-elements.forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    el.classList.add('pop-active');
-  });
-
-  el.addEventListener('mouseleave', () => {
-    el.classList.remove('pop-active');
-    // Resetting scale smoothly
-    el.style.transform = 'scale(1)';
-    el.style.transition = 'transform 0.2s ease-in-out';
-  });
-});
-
         </script>
     </body>
 </html>

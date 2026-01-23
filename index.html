@@ -6,11 +6,12 @@
         <title>Theater Website</title>
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/page.css">
+        <link rel="icon" href="School.ico">
     </head>
     <body>
         <div class="grid-container">
-            <!-- Primary Navbar -->
             <div class="navbar">
+                <h1 class="hello">Congressional Theater</h1>
                 <button class="hamburger" aria-label="Toggle menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -34,56 +35,15 @@
                 </ul>
             </div>
             
-            <!-- Secondary Navbar -->
-            <div class="secondary-navbar">
-                <ul class="secondary-nav-links">
-                    <li><a href="#documentation">Documentation</a></li>
-                    <li><a href="#examples">Examples</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#tutorials">Tutorials</a></li>
-                    <li><a href="#api">API Reference</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#downloads">Downloads</a></li>
-                    <li><a href="#changelog">Changelog</a></li>
-                    <li><a href="#license">License</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            
             <div class="main-content">
                         <div class="image-container">
                             <img id="hero" src="client.png" alt="Just a placeholder for now."> 
-                            <div id="CLICKME">CLICK ME</div>
+                            <div class="CLICKME"><a class="CLICKME" href="https://greetingsplayer1.github.io/client/Current.html">COME WATCH NOW</a></div>
                         </div>
                 
                         <h1>What is theater</h1>
-                <p>This is the main content area. Hover over the "Dropdown" link in the navbar to see the dropdown menu.</p>
+                        <p></p>
 
-                <div class="crdgrd">
-        <div class="card" id="crd1">
-            <h2>Thesbian</h2>
-            <div class="line"></div>
-            <p>The thesbians are a group of people who posses talent in the art of performing</p>
-            <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-
-        <div class="card" id="crd2">
-            <h2>Past Musicals</h2>
-            <div class="line"></div>
-            <p>There have been many musicals played so far view them here</p>
-             <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-
-        <div class="card" id="crd3">
-            <h2>What is the current musical</h2>
-            <div class="line"></div>
-            <p>This years musical is none other than Decendants!! </p>
-             <a class="Button" href="https://greetingsplayer1.github.io/practice/top_chef.html">Learn More</a>
-        </div>
-    </div>
-            </div>
 
             
         </div>
@@ -107,22 +67,6 @@
                     navLinks.classList.remove('active');
                 }
             })
-
-            const elements = document.querySelectorAll('#crd1, #crd2, #crd3');
-
-elements.forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    el.classList.add('pop-active');
-  });
-
-  el.addEventListener('mouseleave', () => {
-    el.classList.remove('pop-active');
-    // Resetting scale smoothly
-    el.style.transform = 'scale(1)';
-    el.style.transition = 'transform 0.2s ease-in-out';
-  });
-});
-
         </script>
     </body>
 </html>
