@@ -142,10 +142,10 @@ body {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .hamburger {
-    margin-top: 2px;
+    margin-top: 1px;
     display: block;
     order: 1;
-    padding: 8px;
+    padding: auto;
     float: right;
   }
 
