@@ -2,7 +2,6 @@
   display: grid;
   grid-template-areas: 
     "head"
-    "secondary"
     "main";
   width: 100%;
 }
@@ -28,6 +27,9 @@
   width: 100%;
   height: auto;
   display: block;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .CLICKME {
@@ -37,15 +39,6 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
   width: 155px;
-}
-
-.hello {
-    color: white;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-top: 2px;
-    position: absolute;
-    width: 10px;
 }
 
 .decend
@@ -62,6 +55,8 @@
     background-color: lightgray;
     width: auto;
     margin-top: 36px;
+    height: auto;
+    min-height: 267px;
 }
 
 .thes

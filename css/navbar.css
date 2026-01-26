@@ -20,7 +20,9 @@ body {
   background-color: #333;
   grid-area: head;
   position: relative;
-  height: 70px;
+  height: auto;
+  width: auto;
+  min-height: 70px;
 }
 
 
@@ -60,7 +62,7 @@ body {
   padding: 8px 12px;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s;
+  
 }
 
 .dropdown {
@@ -132,13 +134,24 @@ body {
 }
 
 #schools {
-    margin-left: 235px;
+    margin-left: 225px;
     margin-top: 6px;
     width: 55px;
     height: auto;
 }
+
+.hello {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 2px;
+    position: absolute;
+    width: auto;
+    max-width: 100px;
+}
+
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .hamburger {
     margin-top: 1px;
     display: block;
@@ -159,8 +172,11 @@ body {
     transform: rotate(-50deg) translate(5px, -5px);
   }
 
-  .nav-links {
+  .navbar {
+    height: 70px;
+  }
 
+  .nav-links {
     display: none;
     width: 100%;
     flex-direction: column;
