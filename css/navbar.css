@@ -1,7 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
-  min-height: 100vh;
+  margin: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +16,7 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #000000;
   grid-area: head;
   position: relative;
   height: auto;
@@ -48,7 +47,6 @@ body {
   margin: 0;
   padding: 0;
   float: right;
-  position: relative;
 }
 
 .nav-links li {
@@ -58,16 +56,17 @@ body {
 .navbar a {
   font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: right;
   padding: 8px 12px;
   text-decoration: none;
   display: inline-block;
-  
+  margin-top: 30px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-top: 30px;
 }
 
 .dropdown .dropbtn {
@@ -134,9 +133,9 @@ body {
 }
 
 #schools {
-    margin-left: 225px;
+    margin-left: 0-px;
     margin-top: 6px;
-    width: 55px;
+    width: 250px;
     height: auto;
 }
 
@@ -151,9 +150,9 @@ body {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .hamburger {
-    margin-top: 1px;
+    margin-top: 40px;
     display: block;
     order: 1;
     padding: auto;
@@ -173,7 +172,7 @@ body {
   }
 
   .navbar {
-    height: 70px;
+    height: auto;
   }
 
   .nav-links {

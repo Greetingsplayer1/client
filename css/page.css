@@ -25,46 +25,60 @@
 
 #hero {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  border-color: black;
-  border-width: 5px;
-  border-style: solid;
 }
 
-.CLICKME {
-  position: absolute;
-  left: 30px;
-  bottom: 20px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  width: 155px;
+.thes {
+  width: 50%;
+  height: auto;
+  font-size: 20px;
 }
 
-.decend
-{
-    width: 300px;
-    height: auto;
-    display: block;
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+#cough {
+  float: right;
+  width: 200px;
+  height: auto;
 }
 
-.None {
-    background-color: lightgray;
-    width: auto;
-    margin-top: 36px;
-    height: auto;
-    min-height: 267px;
+#testgrid {
+  display: grid;
+  grid:
+    'pic1 test1' 1fr
+    'test2 pic2' 1fr
+    'pic3 test3' 1fr
+    /1fr 1fr;
 }
 
-.thes
-{
-    width: 300px;
-    height: auto;
-    display: block;
-    float: right;
-    margin-top: 20px;
-    margin-right: 10px;
+#testgrid img {
+  height: 300px;
+  margin: auto;
+}
+
+#testgrid p {
+  margin: auto;
+}
+
+#pic1 {
+  grid-area: pic1;
+}
+
+#test1 {
+  grid-area: test1;
+}
+
+#pic2 {
+  grid-area: pic2
+}
+
+#test2 {
+  grid-area: test2;
+}
+
+#pic3 {
+  grid-area: pic3;
+}
+
+#test3 {
+  grid-area: test3;
 }
