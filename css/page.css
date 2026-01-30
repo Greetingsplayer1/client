@@ -82,3 +82,28 @@
 #test3 {
   grid-area: test3;
 }
+
+/* Very small screens - stack grid vertically */
+@media screen and (max-width: 480px) {
+  #testgrid {
+    display: flex;
+    flex-direction: column;
+    grid: unset;
+  }
+
+  #testgrid img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  #pic1,
+  #test1,
+  #pic2,
+  #test2,
+  #pic3,
+  #test3 {
+    grid-area: unset;
+  }
+}
