@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Theater Website</title>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/page.css">
+        <link rel="icon" href="School.ico">
+
+        <style>
+            #helllo {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="navbar">
+                <img id="schools" src="media/LOGO.jpg" alt="School LOGO">
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="https://greetingsplayer1.github.io/client/">Home</a></li>
+                    <li><a href="https://greetingsplayer1.github.io/client/thespians.html">Thespian</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Current Musical</button>
+                            <div class="dropdown-content">
+                                <a href="Current.html">Link 1</a>
+                                <a href="Cast.html">Link 2</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+<h1>INFORMATION ABOUT THE INTERNATIONAL THESPIAN SOCIETY </h1>
+    <p>The Internation Thespian Society (ITS) is a performance art honor society for Middle and High School theatre students. The ITS recognizes, rewards, and encourages student achievement in all aspects of theatre. It also provides students with access to opportunities and resources beyond their middle or high school. Joining the ITS offers and includes full membership in the Education Theatre Association, access to online learning and educational theatre resources, discounts to thespian festivals and conferences, and opportunities for state and national and international leadership development, recognition, and awards. By joining, you become a member of the largest professional organization for the field of theatre in the world (There are more than 2.5 million student members!)</p>
+    <br>
+    <p>In Middle School the students are inducted as Junior members and then may continue on to join a High School chapter. In High School, this can help with college interest in the arts and qualifies as part of a National Honor Society ranking. Wow!</p>
+
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 Thetear Project.
+            </p>
+            <hr>
+            <p>
+                Contac Info: Kyle.r.medina@gmail.com
+            </p>
+        </footer>
+        <script>
+            // Hamburger menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            })
+        </script>
+    </body>
+</html>
